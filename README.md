@@ -18,7 +18,7 @@ https://www.kaggle.com/fedesoriano/stroke-prediction-dataset/tasks?taskId=3281
 
 
 
-Analyzed features: 
+## Analyzed features
 + id: unique identifier
 + gender: "Male", "Female" or "Other"
 + age: age of the patient
