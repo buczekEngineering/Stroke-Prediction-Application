@@ -1,7 +1,7 @@
 # Stroke-Prediction-Application
 
 ## Goal
-The goal of the project is to create a machine learning-based web application with Flask Framework that will predict the probability of getting a stroke in the futures.
+The goal of the project is to create a machine learning-based web application with Flask Framework that will predict the probability of stroke.
 
 ## Dataset 
 https://www.kaggle.com/fedesoriano/stroke-prediction-dataset/tasks?taskId=3281 
