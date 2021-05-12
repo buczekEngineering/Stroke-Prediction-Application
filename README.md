@@ -1,7 +1,7 @@
 # Stroke-Prediction-Application
 
 ## Goal
-The goal of the project is to create a machine learning-based web application with Flask Framework that will predict the probability of stroke.
+The goal of the project is to create a machine learning-based web application with Streamlit that will predict the probability of stroke.
 
 ## Dataset 
 https://www.kaggle.com/fedesoriano/stroke-prediction-dataset/tasks?taskId=3281 
@@ -10,11 +10,13 @@ https://www.kaggle.com/fedesoriano/stroke-prediction-dataset/tasks?taskId=3281
 1. Data Preparation 
 2. Exploratory Data Analysis
 3. Feature Selection 
-4. Creating a Pipeline
-5. Writing tests for different levels:  input data, feature engineering, effectiveness of different pipelines 
-6. Serialization 
-7. Deployment
-8. Testing in shadow mode (production environment)
+4. Solving Class Imbalance Problem
+5. Cross Validation and Hyperparameter Search
+6. Creating a model
+7. Writing tests for different levels:  input data, feature engineering, effectiveness of different pipelines 
+8. Serialization 
+9. Deployment on Heroku
+10. Testing in shadow mode (production environment)
 
 
 
