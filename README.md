@@ -13,9 +13,9 @@ https://www.kaggle.com/fedesoriano/stroke-prediction-dataset/tasks?taskId=3281
 4. Solving Class Imbalance Problem
 5. Cross Validation and Hyperparameter Search
 6. Creating a model
-7. Writing tests for different levels:  input data, feature engineering, effectiveness of different pipelines 
+7. Writing unit tests for: input data, feature engineering and preprocessing steps
 8. Serialization 
-9. Deployment on Heroku
+9. Deployment on Heroku and with Docker
 10. Testing in shadow mode (production environment)
 
 
