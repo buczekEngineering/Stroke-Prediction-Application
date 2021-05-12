@@ -60,7 +60,7 @@ def main():
     choosed_model = st.radio("Choose an AI model for prediction", ["RandomForestClassifier","Decision Tree", "Logistic Regression", "KNN"])
     if choosed_model == "Decision Tree":
         model = joblib.load(open(os.path.join("models/DecisionTreeClassifier.pkl"), "rb"))
-    elif choosed_model == "Random Forest Ensamble":
+    elif choosed_model == "RandomForestClassifier":
         model = joblib.load(open(os.path.join("models/RandomForestClassifier.pkl"), "rb"))
     elif choosed_model == "Logistic Regression":
         model = joblib.load(open(os.path.join("models/LogisticRegression.pkl"), "rb"))
