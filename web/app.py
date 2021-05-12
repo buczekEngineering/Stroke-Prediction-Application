@@ -59,13 +59,13 @@ def main():
 
     choosed_model = st.radio("Choose an AI model for prediction", ["RandomForestClassifier","Decision Tree", "Logistic Regression", "KNN"])
     if choosed_model == "Decision Tree":
-        model = joblib.load(open(os.path.join("models/DecisionTreeClassifier.pkl"), "rb"))
+        model = joblib.load(open(os.path.join("web/models/DecisionTreeClassifier.pkl"), "rb"))
     elif choosed_model == "RandomForestClassifier":
-        model = joblib.load(open(os.path.join("models/RandomForestClassifier.pkl"), "rb"))
+        model = joblib.load(open(os.path.join("web/models/RandomForestClassifier.pkl"), "rb"))
     elif choosed_model == "Logistic Regression":
-        model = joblib.load(open(os.path.join("models/LogisticRegression_ftuning_1.pkl"), "rb"))
+        model = joblib.load(open(os.path.join("web/models/LogisticRegression_ftuning_1.pkl"), "rb"))
     else:
-        model = joblib.load(open(os.path.join("models/KNeighborsClassifier.pkl"), "rb"))
+        model = joblib.load(open(os.path.join("web/models/KNeighborsClassifier.pkl"), "rb"))
 
     run_prediction = st.button("Predict")
     if run_prediction:
@@ -81,23 +81,23 @@ def main():
 
     # Analytics
     st.header("Humans Health Parameters and Habits Visualisations")
-    data = pd.read_csv("../web/dataset/healthcare-dataset-stroke-data.csv")
+    data = pd.read_csv("web/dataset/healthcare-dataset-stroke-data.csv")
     st.dataframe(data)
     st.text("Female and male stroke statistical statement")
     fig = plot_gender_stroke(data)
     st.write(fig)
 
-    fig6 = plot_distribution_stroke_vs(data, "age")
-    st.pyplot(fig6)
-    fig7 = plot_distribution_stroke_vs(data, "bmi")
-    st.pyplot(fig7)
-    fig8 = plot_distribution_stroke_vs(data, "avg_glucose_level")
-    st.pyplot(fig8)
+    #fig6 = plot_distribution_stroke_vs(data, "age")
+    #st.pyplot(fig6)
+    #fig7 = plot_distribution_stroke_vs(data, "bmi")
+    #st.pyplot(fig7)
+    #fig8 = plot_distribution_stroke_vs(data, "avg_glucose_level")
+    #st.pyplot(fig8)
 
-    fig1 = plot_scatter_age_stroke_feature(data, "bmi", range_y=[18, 50])
-    st.write(fig1)
-    fig3 = plot_scatter_age_stroke_feature(data, "avg_glucose_level", range_y=[60, 200])
-    st.write(fig3)
+    #fig1 = plot_scatter_age_stroke_feature(data, "bmi", range_y=[18, 50])
+    #st.write(fig1)
+    #fig3 = plot_scatter_age_stroke_feature(data, "avg_glucose_level", range_y=[60, 200])
+    #st.write(fig3)
 
 
 
