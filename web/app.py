@@ -63,7 +63,7 @@ def main():
     elif choosed_model == "RandomForestClassifier":
         model = joblib.load(open(os.path.join("models/RandomForestClassifier.pkl"), "rb"))
     elif choosed_model == "Logistic Regression":
-        model = joblib.load(open(os.path.join("models/LogisticRegression.pkl"), "rb"))
+        model = joblib.load(open(os.path.join("models/LogisticRegression_ftuning_1.pkl"), "rb"))
     else:
         model = joblib.load(open(os.path.join("models/KNeighborsClassifier.pkl"), "rb"))
 
